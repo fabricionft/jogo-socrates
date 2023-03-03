@@ -1,0 +1,156 @@
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerJogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("z-fundoGrecia.jpg");
+    margin-right: 20px;
+}
+
+.containerJogo:hover{
+    cursor: pointer;
+}
+
+.telaFooter{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 75px;
+    background: white;
+    border-radius: 0px 0px 8px 8px;
+    bottom: 0;
+    left: 0;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 15%;
+}
+
+.infoJogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+}
+
+.h1Score{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: rgb(107, 108, 114);
+}
+
+.telaPerdeu, .telaZerou{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: -1;
+    width: 300px;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.613);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.h1GameOver{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pGameOver{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17.5px;
+    color: rgb(183, 188, 193);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botaoJogarNovamente{
+    width: 175px;
+    height: 45px;
+    background: rgb(46, 112, 235);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.botaoJogarNovamente:hover{
+    cursor: pointer;
+    background: rgb(14, 61, 148);
+}
+
+.telaPergunta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.alinha{
+    width: 80%;
+    height: 90%;
+}
+
+.pergunta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    color: black;
+}
+
+.opcoes{
+    width: 100%;
+    height: 35%;
+}
+
+.a, .b{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: rgb(226, 221, 221);
+    width: 100%;
+    height: 50%;
+    border-radius: 4px;
+    font-size: 14px;
+    color: rgb(70, 70, 70);
+}
+
+.b{
+    margin-top: 10px;
+}
+
+.a:hover, .b:hover{
+    cursor: pointer;
+    background: rgb(173, 240, 191);
+}

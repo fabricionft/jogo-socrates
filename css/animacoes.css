@@ -1,0 +1,112 @@
+.animacaoPular{
+    animation: pular 1s ease-out;
+}
+
+.animacaoNuvem{
+    animation: loopNuvem 12s infinite linear;
+}
+
+.animacaoPilar{
+    animation: loop 2.3s infinite linear;
+}
+
+.animacaoPilar1{
+    animation: loop 2s infinite linear;
+}
+
+
+.animacaoBau{
+    animation: loopBau 5s infinite linear;
+}
+
+.chaao, .chaao1, .chaao2{
+    animation: loopChao 5s infinite linear;
+}
+
+.chaao1{
+    animation: loopChao1 5s infinite linear;
+}
+
+.chaao2{
+    animation: loopChao2 5s infinite linear;
+}
+
+@keyframes run {
+    from{
+       background-position: 0px;
+    }to{
+        background-position: 109px;
+    }
+}
+
+@keyframes loop{
+    from{
+        right: -150px;
+    }
+    to{
+        right:  100%;
+    }
+}
+
+@keyframes loopBau{
+    from{
+        right: -40px;
+    }
+    to{
+        right:  100%;
+    }
+}
+
+@keyframes loopNuvem{
+    from{
+        right: -250px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes loopChao{
+    from{
+        right: -30%;
+    }
+    to{
+        right: 20%;
+    }
+}
+
+@keyframes loopChao1{
+    from{
+        right: 20%;
+    }
+    to{
+        right: 70%;
+    }
+}
+
+@keyframes loopChao2{
+    from{
+        right: -80%;
+    }
+    to{
+        right: -30%;
+    }
+}
+
+@keyframes pular{
+    40%{
+        bottom: 275px;
+    }
+
+    50%{
+        bottom: 275px;
+    }
+
+    60%{
+        bottom: 275px;
+    }
+
+    100%{
+        bottom: 120px;
+    }
+}

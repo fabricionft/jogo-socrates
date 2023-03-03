@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jogo</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/elementos.css">
+        <link rel="stylesheet" href="css/telas.css">
+        <link rel="stylesheet" href="css/animacoes.css">
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous" defer>
+        </script>
+        <script src="js/jogo.js" defer></script>
+        <script src="js/variaveis.js" defer></script>
+        <script src="js/questions.js"></script>
+        <script src="js/respostas.js" defer></script>
+    </head>
+
+    <body>
+
+        <main>
+
+            <div class="poki">
+                <div class="divImg">
+                    <img src="img/poki.png" width="80px" height="70px">
+                </div>
+                <div class="divBotoes">
+                    <img src="img/play (1).png" width="25px" height="30px" onclick="iniciarJogo()" class="botaoJogar">
+                </div>
+            </div>
+
+            <div class="container">
+               
+                    <div class="containerJogo" id="containerJogo" onclick="clicar()">
+
+                        <div class="telaPerdeu" id="telaPerdeu">
+                            <h1 class="h1GameOver">GAME OVER</h1>
+                            <p class="pGameOver" id="pGameOver">Pontuação: </p>
+                            <button  class="botaoJogarNovamente" onclick="location.reload();" id="btn">Jogar novamente</button>
+                        </div>
+
+                        <div class="telaPerdeu" id="telaZerou">
+                            <h1 class="h1GameOver">Parabéns, você venceu!!</h1>
+                            <p class="pGameOver">Pontuação: 11</p>
+                            <button  class="botaoJogarNovamente" onclick="location.reload();" id="btn">Jogar novamente</button>
+                        </div>
+        
+                        <h1 class="h1Score" id="h1Score"><h1>
+        
+                        <img src="img/pilar5.png" class="pilar" id="pilar">
+        
+                        <img src="img/clouds.png" class="nuvem" id="nuvem">
+        
+                        <div class="teste"  id="mario"></div>
+        
+                        <img src="img/bau.png" class="bau" id="bau">
+                        <img src="img/bau.png" class="bau" id="bau">
+                        <img src="img/bau.png" class="bau" id="bau">
+    
+                        <img src="img/fundoGrecia.jpg" class="chao" id="chao">
+                        <img src="img/fundoGrecia.jpg" class="chao1" id="chao1">
+                        <img src="img/fundoGrecia.jpg" class="chao2" id="chao2">
+        
+
+                        <div class="telaFooter">
+                            <div class="icon">
+                                <div class="c">
+                                    <img src="img/socrates.png" width="45px">
+                                </div>
+                            </div>
+                
+                            <div class="infoJogo">
+                                <h1>Sócrates Run</h1>
+                                <p>Desenolvido por Fabrício - fabriico_nft</p>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="telaPergunta" id="telaPergunta">
+                    <div class="alinha">
+                        <div class="pergunta" id="questoes">
+                            <p class="pPergunta"></p>
+                        </div>
+                        <div class="opcoes">
+                            <div class="a" id="a" onclick="respondeA()">
+                                <p class="pOpcao"></p>
+                            </div>
+                            <div class="b" id="b" onclick="respondeB()">
+                                <p class="pOpcao"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="divInfo">
+                <h1 class="h1Footer">Tema</h1>
+
+                <div class="info">
+                    <p>
+                        Sócrates foi um filósofo da Grécia antiga, o primeiro pensador do trio de antigos filósofos gregos, que incluía Platão e Aristóteles.
+                    </p>
+                </div>
+            </div>
+
+            <div class="divInfo">
+                <h1 class="h1Footer">Grupo</h1>
+
+                <p>
+                    Ana Júlia
+                    <br>
+                    Julia Lino 
+                    <br>
+                    julya Gabryella
+                    <br>
+                    Laura Biachi
+                    <br>
+                    Vitoria Gomes
+                </p>
+            </div>
+
+            <div class="divInfo">
+                <h1 class="h1Footer">DESENVOLVEDOR</h1>
+
+                <div>
+                    <a href="https://www.instagram.com/fabricio_nft">
+                        <img src="img/instagram.png" width="30px">
+                    </a>
+                    <a href="https://github.com/fabricioferreira859">
+                        <img src="img/github.png" width="30px">
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>
